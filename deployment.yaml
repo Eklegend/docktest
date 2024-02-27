@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argodeploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: argodeploy
+  template:
+    metadata:
+      labels:
+        app: argodeploy
+    spec:
+      containers:
+      - name: 
+        image: ekhari/testdock:latest # Use the image from Docker Hub
+        ports:
+        - containerPort: 5000
