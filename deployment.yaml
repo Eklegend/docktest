@@ -13,7 +13,7 @@ spec:
         app: argodeploy
     spec:
       containers:
-      - name: 
+      - name: argocontainer
         image: ekhari/testdock:latest # Use the image from Docker Hub
         ports:
         - containerPort: 5000
