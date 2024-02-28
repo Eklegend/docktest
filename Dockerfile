@@ -1,6 +1,6 @@
-FROM arm64v8/python:3.8-slim
+FROM arm64v8/python:3.10-slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY . .
 
