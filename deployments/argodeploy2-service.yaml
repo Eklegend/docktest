@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: argodeploy2-service
+  namespace: argocd
+spec:
+  type: ClusterIP
+  selector:
+    app: argodeploy2
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
