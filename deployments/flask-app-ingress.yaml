@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: argodeploy2
+            name: argodeploy2-service
             port:
               number: 5000
