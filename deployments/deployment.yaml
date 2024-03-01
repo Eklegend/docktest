@@ -17,6 +17,6 @@ spec:
         kubernetes.io/arch: "arm64"
       containers:
       - name: argocontainer
-        image: ekhari/argopython:latest # Use the image from Docker Hub
+        image: ekhari/newargodock:latest # Use the image from Docker Hub
         ports:
         - containerPort: 5000
