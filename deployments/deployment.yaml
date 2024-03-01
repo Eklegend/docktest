@@ -14,7 +14,7 @@ spec:
         app: argodeploy2
     spec:
       nodeSelector:
-        kubernetes.io/arch:"arm64"
+        kubernetes.io/arch: "arm64"
       containers:
       - name: argocontainer
         image: ekhari/argopython:latest # Use the image from Docker Hub
