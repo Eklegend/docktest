@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Assuming you're using 'root' or another predefined user
 MYSQL_USER = 'root'  # Or another user if you have a specific one
-MYSQL_PASSWORD = #os.getenv('MYSQL_ROOT_PASSWORD')  # Using the root password from an env variable
+MYSQL_PASSWORD = os.getenv('MYSQL_ROOT_PASSWORD')  # Using the root password from an env variable
 
 # Update your database URI with the appropriate user and password
 # Be sure to replace 'your-database-url' and 'database-name' with your actual database host and database name
