@@ -20,14 +20,3 @@ spec:
         image: ekhari/newargodock:latest # Use the image from Docker Hub
         ports:
         - containerPort: 5000
-        env:
-        - name: MYSQL_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: my-mysql
-              key: mysql-password
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: my-mysql
-              key: mysql-root-password
